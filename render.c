@@ -6,7 +6,7 @@
 /*   By: vloureir <vloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 15:50:06 by vloureir          #+#    #+#             */
-/*   Updated: 2025/05/27 09:26:12 by vloureir         ###   ########.fr       */
+/*   Updated: 2025/05/30 08:43:32 by vloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,5 +63,7 @@ int	ft_render(t_data *prog)
 		return (MLX_ERROR);
 	render_fractal(&prog->img, &prog->utils);
 	mlx_put_image_to_window(prog->mlx, prog->win, prog->img.img, 0, 0);
+	mlx_string_put(prog->mlx, prog->win, (WIDTH / 2) - 30, 20, \
+					0xFFFFFF, prog->utils.prog_name);
 	return (0);
 }

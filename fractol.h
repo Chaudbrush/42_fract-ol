@@ -6,7 +6,7 @@
 /*   By: vloureir <vloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 13:51:34 by vloureir          #+#    #+#             */
-/*   Updated: 2025/05/27 09:39:19 by vloureir         ###   ########.fr       */
+/*   Updated: 2025/05/31 16:58:59 by vloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,21 +68,28 @@ typedef struct s_data
 	t_utils		utils;
 }				t_data;
 
-int		ft_mlx_init(t_data *prog, char **av);
+int		ft_mlx_init(t_data *prog);
+void	handle_zoom_in(int x, int y, t_data *prog);
 int		handle_keypress(int keypress, t_data *prog);
 int		handle_mouse(int mouse, int x, int y, t_data *prog);
 
+int		check_num(char *str);
+int		check_str(char *str);
+void	argv_parse(t_data *prog, char **av);
+void	julia_err(t_utils *utils, char **av);
+
+void	ft_init_data(t_utils *utils);
+void	ft_init_julia(t_utils *utils);
 void	ft_init_phoenix(t_utils *utils);
-void	ft_init_data(t_utils *utils, char **av);
-void	ft_init_julia(t_utils *utils, char **av);
 
 void	ft_putstr(char *str);
 double	atoi_double(char *str);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
-void	ft_argc_error(void);
+int		ft_argc_error(char *str);
 int		ft_close_all(t_data *prog);
 int		ft_close_half(t_data *prog);
+int		ft_close_mini(t_data *prog);
 
 int		julia(double x, double y, t_utils utils);
 int		phoenix(double x, double y, t_utils utils);
