@@ -6,7 +6,7 @@
 /*   By: vloureir <vloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 13:51:34 by vloureir          #+#    #+#             */
-/*   Updated: 2025/05/31 16:58:59 by vloureir         ###   ########.fr       */
+/*   Updated: 2025/06/02 19:00:22 by vloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 # include <X11/X.h>
 
 # define MLX_ERROR 1
+# define PARSE_ERROR 2
 # define WIDTH 1000
 # define HEIGHT 1000
 # define PI2 6.28318530

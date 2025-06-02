@@ -6,7 +6,7 @@
 /*   By: vloureir <vloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 13:44:17 by vloureir          #+#    #+#             */
-/*   Updated: 2025/05/31 16:59:22 by vloureir         ###   ########.fr       */
+/*   Updated: 2025/06/02 19:02:02 by vloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,13 @@ int	ft_mlx_init(t_data *prog)
 {
 	prog->mlx = mlx_init();
 	if (prog->mlx == NULL)
-		return (MLX_ERROR);
+		exit (MLX_ERROR);
 	prog->win = mlx_new_window(prog->mlx, WIDTH, HEIGHT, "Fract-ol");
 	if (prog->win == NULL)
-		return (ft_close_mini(prog), MLX_ERROR);
+		ft_close_mini(prog);
 	prog->img.img = mlx_new_image(prog->mlx, WIDTH, HEIGHT);
 	if (prog->img.img == NULL)
-		return (ft_close_half(prog), MLX_ERROR);
+		ft_close_half(prog);
 	prog->img.addr = mlx_get_data_addr(prog->img.img, \
 						&prog->img.bpp, &prog->img.line_len, &prog->img.endian);
 	return (0);
