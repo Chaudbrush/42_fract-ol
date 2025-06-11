@@ -1,4 +1,4 @@
-# 42_get_next_line
+# 42_fract-ol
 
 ### Small Description
   - This project is a subtle introduction to the world of X Window System, for that we use the Minilibx from the 42 School. We aim to render fractals using only the CPU, without the aid of threads or the GPU.
