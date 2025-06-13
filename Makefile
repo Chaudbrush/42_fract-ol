@@ -6,11 +6,13 @@
 #    By: vloureir <vloureir@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/22 13:43:11 by vloureir          #+#    #+#              #
-#    Updated: 2025/06/13 12:06:19 by vloureir         ###   ########.fr        #
+#    Updated: 2025/06/13 22:47:49 by vloureir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#MAKEFLAGS += --silent
+ifndef VERBOSE
+MAKEFLAGS += --silent
+endif
 
 NAME := fractol
 
