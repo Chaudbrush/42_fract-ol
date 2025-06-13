@@ -6,11 +6,11 @@
 /*   By: vloureir <vloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 15:50:06 by vloureir          #+#    #+#             */
-/*   Updated: 2025/05/30 08:43:32 by vloureir         ###   ########.fr       */
+/*   Updated: 2025/06/13 11:17:16 by vloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 void	img_pixel_put(t_img *img, int x, int y, int color)
 {

@@ -6,11 +6,11 @@
 /*   By: vloureir <vloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 09:26:02 by vloureir          #+#    #+#             */
-/*   Updated: 2025/05/30 09:13:56 by vloureir         ###   ########.fr       */
+/*   Updated: 2025/06/13 11:17:00 by vloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 int	coloring(double i, t_utils utils)
 {

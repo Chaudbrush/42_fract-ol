@@ -6,11 +6,11 @@
 /*   By: vloureir <vloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/25 09:56:40 by vloureir          #+#    #+#             */
-/*   Updated: 2025/05/26 19:34:43 by vloureir         ###   ########.fr       */
+/*   Updated: 2025/06/13 11:17:11 by vloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 void	ft_putstr(char *str)
 {

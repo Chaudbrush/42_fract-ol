@@ -6,11 +6,11 @@
 /*   By: vloureir <vloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 15:11:36 by vloureir          #+#    #+#             */
-/*   Updated: 2025/06/02 19:00:26 by vloureir         ###   ########.fr       */
+/*   Updated: 2025/06/13 11:17:08 by vloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 int	ft_close_all(t_data *prog)
 {

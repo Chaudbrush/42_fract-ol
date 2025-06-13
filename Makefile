@@ -6,18 +6,20 @@
 #    By: vloureir <vloureir@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/22 13:43:11 by vloureir          #+#    #+#              #
-#    Updated: 2025/06/01 09:16:27 by vloureir         ###   ########.fr        #
+#    Updated: 2025/06/13 11:18:35 by vloureir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME := fractol
 
-SRC := errors_and_exit.c render.c main.c libft_helpers.c fractals.c \
-		colors.c data_init.c parsing.c
+SRC := src/errors_and_exit.c src/render.c src/main.c src/libft_helpers.c \
+		src/fractals.c src/colors.c src/data_init.c src/parsing.c
 
 OBJ := $(SRC:.c=.o)
 
-HEADER := fractol.h
+HEADER := includes/fractol.h
+
+INC := -I includes
 
 LIB := libmlx_Linux.a
 
@@ -44,7 +46,7 @@ all: $(NAME)
 $(NAME): $(OBJ) $(HEADER)
 	$(MAKE) -C $(MLX_DIR)
 	@echo "$(GREEN) Minilibx Compiled $(OFF)"
-	$(CC) $(OBJ) $(CFLAGS) $(LFLAGS) -o $(NAME) -I.
+	$(CC) $(OBJ) $(CFLAGS) $(LFLAGS) -o $(NAME) $(INC)
 	@echo "$(GREEN) Fractol Crated $(OFF)"
 
 mlx:

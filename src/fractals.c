@@ -6,11 +6,11 @@
 /*   By: vloureir <vloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/25 11:19:13 by vloureir          #+#    #+#             */
-/*   Updated: 2025/05/26 19:15:38 by vloureir         ###   ########.fr       */
+/*   Updated: 2025/06/13 11:17:09 by vloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 int	check_name(double c, double i, t_utils *utils)
 {

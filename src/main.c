@@ -6,11 +6,11 @@
 /*   By: vloureir <vloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 13:44:17 by vloureir          #+#    #+#             */
-/*   Updated: 2025/06/02 19:02:02 by vloureir         ###   ########.fr       */
+/*   Updated: 2025/06/13 11:17:13 by vloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 int	main(int argc, char **argv)
 {
